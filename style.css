@@ -1,0 +1,452 @@
+body {
+  background: #836F3C;
+  color: #836F3C;
+  padding: 0;
+  margin: 0;
+
+
+  font-size: 16px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  grid-template-areas:
+    ". .";
+  width: 100vw;
+  height: 100vh;
+
+
+  transition: all 50ms ease-in-out;
+}
+
+.text {
+  text-align: center;
+  color: #836F3C;
+  display: grid;
+  grid-column: 1;
+  padding: 4em;
+
+
+  background-color: #F9F4EC;
+
+  justify-content: center;
+
+
+}
+
+.image {
+  display: grid;
+  grid-column: 2;
+  padding: 4em;
+}
+
+img {
+  place-self: center;
+  z-index: 1;
+  width: 100%;
+
+}
+
+.save {
+  align-self: start;
+}
+
+.july {
+  align-self: end;
+}
+
+.us {
+  display: grid;
+  place-self: center;
+  z-index: -1;
+  width: 40%;
+}
+
+.text .us {
+  display: none;
+  z-index: 2;
+  grid-column: 1;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  place-self: center;
+  width: 40%;
+
+}
+
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  align-self: end;
+
+  padding-bottom: 2em;
+}
+
+
+
+.language_select {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+
+  top: 24px;
+  right: 16px;
+
+  color: #F9F4EC;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.language_select a {
+  color: #D7CEBA;
+  font-weight: 400;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.language_select span {
+  margin-right: 16px;
+}
+
+.language_select a:hover {
+  color: #F9F4EC;
+  font-weight: 400;
+}
+
+
+
+
+.body-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50%;
+}
+
+.header-back {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 40px;
+  height: 40px;
+  background: #29432B;
+  border-radius: 4px;
+  transition: all 100ms ease-in-out;
+}
+
+.header-back:hover {
+  background: #1E341F;
+}
+
+h1 {
+  font-family: Italiana;
+  font-size: 8em;
+  line-height: 1.2em;
+  font-weight: 300;
+
+  margin: 0px;
+
+}
+
+h4 {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  line-height: 1em;
+  line-height: 3em;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 16px;
+
+  margin: 0;
+}
+
+h5 {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  line-height: 1em;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 8px;
+
+  margin: 0;
+}
+
+.invitation {
+  display: grid;
+  align-content: start;
+  justify-content: center;
+}
+
+p {
+  width: 70%;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 500;
+
+  margin-bottom: 0;
+  place-self: center;
+}
+
+.rsvp {
+  padding: 144px;
+  width: 100%;
+  float: left;
+
+  grid-column: 1;
+}
+
+
+
+
+
+}
+
+
+.half {
+  float: left;
+  width: 232px;
+}
+
+.half:nth-of-type(1) {
+  margin-right: 32px;
+}
+
+
+fieldset {
+  display: block;
+  width: 520px;
+  padding: 0;
+  border: 0;
+  margin-bottom: 40px;
+}
+
+input {
+  background: none;
+  height: 48px;
+  border-style: none;
+  border-bottom: 1px solid #5C6E5A;
+  width: 100%;
+  font-size: 14px; 
+  color: #FFF9F1;
+}
+
+input:hover {
+  border-bottom: 1px solid #9BA294;
+  transition: all 150ms ease-in-out;
+} 
+
+input:focus {
+    outline-style: none;
+    outline: none;
+  background: none;
+  border-style: none;
+  border-bottom: 1px solid #9BA294;
+} 
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+
+::placeholder {
+  color: #8F9B8A;
+}
+
+textarea {
+  width: 100%;
+}
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.is-center {
+  text-align: center;
+}
+
+button {
+  float: left;
+  color: #29432B;
+  border-radius: 4px;
+  background: #FFF9F1;
+  font-size: 11px;
+  line-height: 40px;
+  font-weight: 700;
+  border: 0;
+
+  width: 172px;
+  height: 40px;
+  transition: all 150ms ease-in-out;
+}
+
+button:hover {
+  background: #E3DBD0;
+  border-radius: 4px;
+}
+
+
+#name, #email {
+  width: 50%;
+}
+.honeypot-field {
+  display: none;
+}
+
+
+
+/* The container */
+.container {
+  left: -10px;
+  float:left;
+  width: 46px;
+  height: 40px;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size:  14px;
+  line-height: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 100ms ease-in-out;
+}
+
+.container:nth-of-type(1) {
+  margin-right: 8px;
+}
+
+.container:hover {
+  background: #1E341F;
+  border-radius: 4px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+
+/* Create a custom radio button */
+.checkmark {
+  background-image: url(_assets/icon_check.svg);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 18px;
+  width: 18px;
+  background-color: #29432B;
+  border: 1px solid #5C6E5A;
+  border-radius: 18px;
+  transition: all 50ms ease-in-out;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #28432A;
+  border: 1px solid #9BA294;
+
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #FFF9F1;
+  border: 1px solid #FFF9F1;
+}
+
+.container input:checked ~ .container {
+  font-weight: 900;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+
+  transition: all 100ms ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+
+body {
+
+  grid-template-columns: 1fr;
+}
+.text .us {
+  display: block;
+
+}
+
+.text .invitation {
+  padding-bottom: 3em;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.image {
+  display: none;
+}
+
+
+.language_select {
+  color: #836F3C;
+  font-size: 13px;
+}
+
+.language_select a {
+  color: #836F3C;
+}
+
+.language_select a:hover {
+  color: #836F3C;
+}
+
+p {
+  width: 80%;
+
+}
+
+}
+
+@media screen and (min-width: 1700px) {
+p {
+  width: 60%;
+
+}
+  .image .us {
+    width: 30%;
+  }
+}
