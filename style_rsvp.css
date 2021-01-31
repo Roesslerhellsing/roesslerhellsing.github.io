@@ -1,6 +1,6 @@
 body {
-  background: #836F3C;
-  color: #836F3C;
+  background: #29432B;
+  color: #FFF9F0;
   padding: 0;
   margin: 0;
 
@@ -9,15 +9,7 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
-
-
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1;
-  grid-template-areas:
-    ". .";
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
 
@@ -39,10 +31,15 @@ body {
 
 }
 
+form {
+}
+
+.form-elements {
+}
+
 .image {
-  display: grid;
-  grid-column: 2;
-  padding: 4em;
+  width: 40%;
+  float: left;
 }
 
 img {
@@ -165,10 +162,6 @@ img {
 
 
 .body-container {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 50%;
 }
 
 .header-back {
@@ -188,8 +181,8 @@ img {
 
 h1 {
   font-family: Italiana;
-  font-size: 8em;
-  line-height: 1.2em;
+  font-size: 6em;
+  line-height: 1em;
   font-weight: 300;
 
   margin: 0px;
@@ -200,7 +193,6 @@ h4 {
   display: block;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
-  text-transform: uppercase;
   line-height: 1em;
   line-height: 3em;
   font-weight: 700;
@@ -232,17 +224,18 @@ p {
   width: 70%;
   display: block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2em;
-  line-height: 1.2em;
+  font-size: 1em;
+  line-height: 1.4em;
   font-weight: 500;
 
   margin-bottom: 0;
+  margin-bottom: 2em;
   place-self: center;
 }
 
 .rsvp {
-  padding: 144px;
-  width: 100%;
+  padding: 10%;
+  width: 80%;
   float: left;
 
   grid-column: 1;
@@ -267,10 +260,10 @@ p {
 
 fieldset {
   display: block;
-  width: 520px;
+  width: 100%;
   padding: 0;
   border: 0;
-  margin-bottom: 40px;
+  margin-bottom: 2em;
 }
 
 input {
@@ -387,7 +380,7 @@ button:hover {
 
 /* Create a custom radio button */
 .checkmark {
-  background-image: url(_assets/icon_check.svg);
+  background-image: url(assets/icon_check.svg);
   position: absolute;
   top: 10px;
   left: 10px;
@@ -459,6 +452,8 @@ h5 {
   font-size: 16px;
 }
 
+h1 {margin-top: 1em;}
+
 .image {
   display: none;
 }
@@ -478,7 +473,7 @@ h5 {
 }
 
 p {
-  width: 80%;
+  width: 100%;
 
 }
 
